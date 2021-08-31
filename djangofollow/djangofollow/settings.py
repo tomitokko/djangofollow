@@ -76,10 +76,14 @@ WSGI_APPLICATION = 'djangofollow.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_DEFAULT_DATABASE_NAME', 'postgres'),
+    'USER': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_LOGIN', 'postgres'),
+    'PASSWORD': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_PASSWORD'),
+    'HOST': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_HOST', 'z6bc6b886-postgresql.||Q_DOMAIN||'),
+    'PORT': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_PORT', 5432),
+  }
 }
 
 
