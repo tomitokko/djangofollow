@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'djangofollow.wsgi.application'
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_DEFAULT_DATABASE_NAME', 'postgres'),
-    'USER': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_LOGIN', 'postgres'),
-    'PASSWORD': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_PASSWORD'),
-    'HOST': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_HOST', 'z6bc6b886-postgresql.||Q_DOMAIN||'),
-    'PORT': os.environ.get('QOVERY_POSTGRESQL_Z6BC6B886_PORT', 5432),
+    'NAME': os.environ.get('QOVERY_POSTGRESQL_Z5B5DF0B7_DEFAULT_DATABASE_NAME', 'postgres'),
+    'USER': os.environ.get('QOVERY_POSTGRESQL_Z5B5DF0B7_LOGIN', 'postgres'),
+    'PASSWORD': os.environ.get('QOVERY_POSTGRESQL_Z5B5DF0B7_PASSWORD'),
+    'HOST': os.environ.get('QOVERY_POSTGRESQL_Z5B5DF0B7_HOST', 'z5b5df0b7-postgresql.||Q_DOMAIN||'),
+    'PORT': os.environ.get('QOVERY_POSTGRESQL_Z5B5DF0B7_PORT', 5432),
   }
 }
 
